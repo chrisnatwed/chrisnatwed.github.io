@@ -101,10 +101,18 @@
 		margin-bottom: 1em;
 	}
 
-    .details
+    .details {
+        font-size: 18px;
+    }
+
+    .details .key
     {
-        vertical-align: text-top;
         font-weight: bold;
+    }
+
+    .details .val
+    {
+        padding: 10px;
     }
 
 	header
