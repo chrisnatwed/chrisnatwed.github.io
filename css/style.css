@@ -124,6 +124,11 @@
 		{
 		}
 
+        header h3
+        {
+            font-size: 26pt;
+        }
+
 		header .byline
 		{
 			display: block;
