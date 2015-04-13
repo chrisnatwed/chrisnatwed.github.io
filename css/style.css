@@ -101,6 +101,12 @@
 		margin-bottom: 1em;
 	}
 
+    .details
+    {
+        vertical-align: text-top;
+        font-weight: bold;
+    }
+
 	header
 	{
 		margin-bottom: 1.6em;
