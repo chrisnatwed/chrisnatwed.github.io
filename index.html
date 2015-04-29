@@ -20,6 +20,19 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
+
+        <link rel="stylesheet" href="css/flipclock.css" />
+		<script src="js/flipclock.min.js"></script>
+        <script type="text/javascript">
+            $( document ).ready(function(){
+                var d1 = new Date();
+                var d2 = new Date("2016-01-09 13:00:00");
+                var clock = $('.clk').FlipClock(((d2-d1)/1000), {
+                        clockFace: 'DailyCounter',
+                        countdown: true,
+                });
+            });
+        </script>
 	</head>
 	<body class="homepage">
 
@@ -41,7 +54,7 @@
 				<!-- Logo -->
 				<div id="logo">
 					<h1><a href="#">Chris and Nat's Wedding</a></h1>
-					<span class="tag">#TheMicelisGetHitched</span>
+                    <span class="tag">#TheMicelisGetHitched</span>
 				</div>
 			</div>
 		</div>
@@ -50,9 +63,12 @@
 		<div id="main">
 			<div id="content" class="container">
                 <section>
-                    <p>First of all, welcome to the website for our wedding. The excitement even this far from the day is overwhelming to say the least.</p>
 
-                    <p>I am so excited to marry Nat. We have been through quite a lot considering that we will only have been together for 4 and a half years by the date of the wedding.
+                    <p>First of all, welcome to the website for our wedding. The excitement even this far from the day is overwhelming to say the least. The count down is on:</p>
+
+                    <span style="margin:0 auto;"><div class="clk"></div></span>
+
+                    <p>I am so excited to marry Nat. We have been through quite a lot considering that we will only have been together for four and a half years by the date of the wedding.
                     The hardest thing by far is this year, the toughest of my life but I live it day to day knowing that on the ass end of this year I'll get to come home and marry the
                     girl of my dreams.</p>
 
